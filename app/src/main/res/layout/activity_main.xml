@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl"
+    >
+
+    <RelativeLayout
+        android:id="@+id/cameraLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rr2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="5sp"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/captured_image"
+                android:layout_width="180sp"
+                android:layout_height="180sp"
+                android:elevation="8sp" />
+
+            <FrameLayout
+                android:id="@+id/camera_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:gravity="center_horizontal"
+            android:id="@+id/button"
+            android:layout_width="50sp"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/squarecamera__camera_snap_selected"
+            android:elevation="10dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/saveLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:minHeight="200sp"
+                android:minWidth="200sp"
+                android:layout_gravity="center"
+                android:id="@+id/saveImage"
+                android:layout_width="200sp"
+                android:layout_height="200sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
